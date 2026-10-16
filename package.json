@@ -1,0 +1,17 @@
+{
+  "name": "raffy-lucero-portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Website for Raffy Lucero - BSIS Student & Aspiring Web Developer / UI-UX Designer",
+  "scripts": {
+    "dev": "npx serve . -l 3000",
+    "start": "npx serve . -l 3000"
+  },
+  "keywords": [
+    "portfolio",
+    "web-development",
+    "ui-ux",
+    "bsis"
+  ],
+  "author": "Raffy Lucero",
+  "license": "MIT"
+}

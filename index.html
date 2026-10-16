@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Raffy Lucero | Aspiring Web Developer & UI/UX Designer</title>
+  <meta name="description" content="Portfolio of Raffy Lucero, BSIS Student, Aspiring Web Developer and UI/UX Designer passionate about building accessible web solutions and modern interfaces." />
+  <meta name="keywords" content="Raffy Lucero, BSIS, Web Developer, UI/UX Designer, Portfolio, HTML, CSS, JavaScript, Next.js, SQL" />
+  <meta name="author" content="Raffy Lucero" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23121316'/><text x='50' y='65' font-size='42' font-family='sans-serif' font-weight='900' fill='%23FF5722' text-anchor='middle'>RL</text></svg>" />
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Outer Background Decor Elements -->
+  <div class="bg-shape bg-shape-1" aria-hidden="true"></div>
+  <div class="bg-shape bg-shape-2" aria-hidden="true"></div>
+  <div class="bg-grid-lines" aria-hidden="true"></div>
+
+  <!-- Main Website Container (Framed Card Inspired by Reference) -->
+  <div class="site-wrapper">
+    <div class="portfolio-container" id="app-container">
+
+      <!-- Navigation Header -->
+      <header class="site-header" id="header">
+        <div class="nav-inner">
+          <!-- Logo / Name -->
+          <a href="#home" class="logo" aria-label="Raffy Lucero Home">
+            <span class="logo-accent">LOGO</span>
+            <span class="logo-sub">RAFFY.DEV</span>
+          </a>
+
+          <!-- Desktop Navigation -->
+          <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#home" class="nav-link active" id="nav-link-home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#services" class="nav-link" id="nav-link-services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link" id="nav-link-about">About me</a>
+              </li>
+              <li class="nav-item">
+                <a href="#portfolio" class="nav-link" id="nav-link-portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link" id="nav-link-contact">Contact me</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Nav Right Action & Mobile Toggle -->
+          <div class="nav-actions">
+            <a href="#contact" class="btn btn-primary nav-hire-btn">Hire Me</a>
+            <button type="button" class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+              <span class="hamburger-bar"></span>
+              <span class="hamburger-bar"></span>
+              <span class="hamburger-bar"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Content Area -->
+      <main id="main-content">
+
+        <!-- ==============================================
+             HERO SECTION (HOME)
+             ============================================== -->
+        <section class="hero-section" id="home" aria-labelledby="hero-title">
+          <div class="hero-layout">
+            
+            <!-- Left Hero Info -->
+            <div class="hero-content">
+              <div class="hero-intro-tag">
+                <span class="hi-text">Hi I am</span>
+                <h2 class="name-text">Raffy Lucero</h2>
+              </div>
+
+              <!-- Main Prominent Headline Matching Reference Image -->
+              <h1 class="main-headline" id="hero-title">
+                Aspiring Web Developer &amp; UI/UX Designer
+              </h1>
+
+              <p class="hero-subtext">
+                Bachelor of Science in Information Systems (BSIS) student focused on building accessible, responsive websites and modern digital solutions that solve real-world problems.
+              </p>
+
+              <!-- Social Media Icon Circles -->
+              <div class="social-links-row" aria-label="Social Media Links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="GitHub Profile" title="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="LinkedIn Profile" title="LinkedIn">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.67 1.67 0 1 0 0-3.34 1.67 1.67 0 0 0 0 3.34M7.85 18.5V10.1H5.07v8.4h2.78z"/>
+                  </svg>
+                </a>
+                <a href="mailto:raffysfalls122@gmail.com" class="social-circle" aria-label="Direct Email" title="Email: raffysfalls122@gmail.com">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                </a>
+                <a href="#portfolio" class="social-circle" aria-label="Portfolio Showcase" title="Work Showcase">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                  </svg>
+                </a>
+              </div>
+
+              <!-- Action Buttons Row -->
+              <div class="hero-cta-group">
+                <a href="#contact" class="btn btn-primary hero-btn">Hire Me</a>
+                <a href="assets/documents/Raffy_Lucero_CV.pdf" download="Raffy_Lucero_CV.pdf" class="btn btn-outline hero-btn" id="cv-download-btn">
+                  <span>Download CV</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16" aria-hidden="true">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+
+              <!-- Metrics / Highlight Card (Inspired by Reference, honest student data) -->
+              <div class="hero-stats-card" aria-label="Student Credentials Highlight">
+                <div class="stat-col">
+                  <span class="stat-number">BSIS</span>
+                  <span class="stat-caption">Academic Program</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-col">
+                  <span class="stat-number">5+</span>
+                  <span class="stat-caption">Core Technologies</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-col">
+                  <span class="stat-number">3</span>
+                  <span class="stat-caption">Featured Works</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Hero Image with Circular Backdrop -->
+            <div class="hero-visual">
+              <div class="hero-image-stage">
+                <!-- Circular Dark Backdrop Matching Reference Image -->
+                <div class="hero-circle-backdrop" aria-hidden="true"></div>
+                
+                <!-- Profile Image of Raffy Lucero -->
+                <div class="hero-portrait-container">
+                  <img 
+                    src="assets/images/raffy-profile.png" 
+                    alt="Raffy Lucero - BSIS Student, Aspiring Web Developer & UI/UX Designer" 
+                    class="hero-portrait" 
+                    id="hero-profile-img"
+                    onerror="this.onerror=null; this.src='assets/images/raffy-original.png';"
+                  />
+                </div>
+
+                <!-- Floating Accent Badge -->
+                <div class="hero-floating-badge" aria-hidden="true">
+                  <div class="status-pulse-dot"></div>
+                  <span>Available for Internships &amp; Projects</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ==============================================
+             SERVICES SECTION
+             ============================================== -->
+        <section class="section-container" id="services" aria-labelledby="services-title">
+          <div class="section-header">
+            <span class="section-tag">SERVICES &amp; CAPABILITIES</span>
+            <h2 class="section-title" id="services-title">Skills &amp; Services I Develop</h2>
+            <p class="section-description">
+              As a dedicated Information Systems student, I offer solid foundations in modern web design, frontend coding, and database architecture.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <!-- Service 1 -->
+            <article class="service-card">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="service-heading">Web Development</h3>
+              <p class="service-body">
+                Building clean, accessible, and structured web interfaces utilizing semantic HTML5, modern CSS3 styling, and JavaScript logic.
+              </p>
+              <div class="service-tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </article>
+
+            <!-- Service 2 -->
+            <article class="service-card">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="service-heading">Responsive Website Design</h3>
+              <p class="service-body">
+                Ensuring websites adapt seamlessly across mobile phones, tablets, and desktop monitors with fluid layouts and touch-friendly controls.
+              </p>
+              <div class="service-tech-tags">
+                <span class="tech-tag">Mobile-First</span>
+                <span class="tech-tag">Flexbox / Grid</span>
+                <span class="tech-tag">Cross-Browser</span>
+              </div>
+            </article>
+
+            <!-- Service 3 -->
+            <article class="service-card">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                  <path d="M2 2l7.586 7.586"></path>
+                  <circle cx="11" cy="11" r="2"></circle>
+                </svg>
+              </div>
+              <h3 class="service-heading">UI/UX Design</h3>
+              <p class="service-body">
+                Formulating intuitive user flows, visual hierarchies, and wireframe prototypes designed to make digital experiences simple, pleasant, and accessible.
+              </p>
+              <div class="service-tech-tags">
+                <span class="tech-tag">Figma</span>
+                <span class="tech-tag">Wireframing</span>
+                <span class="tech-tag">Usability</span>
+              </div>
+            </article>
+
+            <!-- Service 4 -->
+            <article class="service-card">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3 class="service-heading">Basic Database Design</h3>
+              <p class="service-body">
+                Structuring relational databases, formulating entity relationship models, and constructing SQL queries for structured information systems.
+              </p>
+              <div class="service-tech-tags">
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">Relational Schemas</span>
+                <span class="tech-tag">Data Modeling</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ==============================================
+             ABOUT ME SECTION
+             ============================================== -->
+        <section class="section-container" id="about" aria-labelledby="about-title">
+          <div class="about-grid">
+            
+            <!-- Left Info Panel -->
+            <div class="about-side-panel">
+              <div class="about-student-badge">
+                <span class="badge-icon">🎓</span>
+                <div class="badge-text">
+                  <strong>Bachelor of Science</strong>
+                  <span>Information Systems (BSIS)</span>
+                </div>
+              </div>
+
+              <!-- Tech Stack Pill Group -->
+              <div class="tech-stack-container">
+                <h4 class="tech-stack-heading">Core Technical Skills</h4>
+                <div class="tech-pills-list">
+                  <div class="skill-chip">
+                    <span class="chip-dot"></span>
+                    <span class="chip-name">HTML5</span>
+                  </div>
+                  <div class="skill-chip">
+                    <span class="chip-dot"></span>
+                    <span class="chip-name">CSS3</span>
+                  </div>
+                  <div class="skill-chip">
+                    <span class="chip-dot"></span>
+                    <span class="chip-name">JavaScript</span>
+                  </div>
+                  <div class="skill-chip">
+                    <span class="chip-dot"></span>
+                    <span class="chip-name">Next.js</span>
+                  </div>
+                  <div class="skill-chip">
+                    <span class="chip-dot"></span>
+                    <span class="chip-name">SQL</span>
+                  </div>
+                  <div class="skill-chip">
+                    <span class="chip-dot"></span>
+                    <span class="chip-name">Responsive Design</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Learning & Academic Focus -->
+              <div class="focus-box">
+                <h4 class="focus-heading">Academic &amp; Career Focus</h4>
+                <p class="focus-text">
+                  Bridging business information systems with high-quality user experience and modern software engineering practices.
+                </p>
+              </div>
+            </div>
+
+            <!-- Right Main Bio -->
+            <div class="about-main-content">
+              <span class="section-tag">ABOUT ME</span>
+              <h2 class="section-title" id="about-title">Passionate About Technology &amp; Purposeful Design</h2>
+              
+              <!-- Direct Provided Biography -->
+              <div class="about-bio-quote">
+                <p>
+                  "I am <strong>Raffy Lucero</strong>, a Bachelor of Science in Information Systems (BSIS) student with a passion for technology, web development, and creative problem-solving. I enjoy learning new skills, exploring modern technologies, and creating websites and digital solutions that are useful, accessible, and user-friendly. My goal is to continuously improve my technical and professional skills, gain real-world experience, and become a skilled IT professional who can make a positive impact through technology."
+                </p>
+              </div>
+
+              <div class="values-row">
+                <div class="value-item">
+                  <div class="value-check">✓</div>
+                  <div class="value-text">
+                    <strong>Creative Problem-Solving</strong>
+                    <span>Approaching technical hurdles with curiosity, logic, and persistence.</span>
+                  </div>
+                </div>
+                <div class="value-item">
+                  <div class="value-check">✓</div>
+                  <div class="value-text">
+                    <strong>Accessible &amp; User-First</strong>
+                    <span>Designing interfaces that are readable, straightforward, and welcoming to all users.</span>
+                  </div>
+                </div>
+                <div class="value-item">
+                  <div class="value-check">✓</div>
+                  <div class="value-text">
+                    <strong>Continuous Learning</strong>
+                    <span>Eagerly adopting modern web frameworks, SQL practices, and industry standards.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="about-action-row">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="assets/documents/Raffy_Lucero_CV.pdf" download="Raffy_Lucero_CV.pdf" class="btn btn-outline">
+                  Download Full CV
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ==============================================
+             PORTFOLIO / PROJECTS SECTION (EXACTLY 3 PROJECTS)
+             ============================================== -->
+        <section class="section-container" id="portfolio" aria-labelledby="portfolio-title">
+          <div class="section-header">
+            <span class="section-tag">PROJECT PORTFOLIO</span>
+            <h2 class="section-title" id="portfolio-title">Featured Projects &amp; Prototypes</h2>
+            <p class="section-description">
+              Explore my coursework projects, functional prototypes, and UI/UX design concepts. Unfinished works are transparently labeled as prototypes.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            
+            <!-- Project 1: Personal Portfolio Website -->
+            <article class="project-card">
+              <div class="project-thumb-box">
+                <img src="assets/images/project-portfolio.png" alt="Personal Portfolio Website interface preview" class="project-thumb" loading="lazy" />
+                <span class="project-badge badge-active">Live Project</span>
+              </div>
+              <div class="project-info">
+                <div class="project-tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+                <h3 class="project-title">Personal Portfolio Website</h3>
+                <p class="project-desc">
+                  A responsive personal portfolio website designed and built from scratch to showcase my academic profile, technical capabilities, and projects with a sleek dark aesthetic.
+                </p>
+                <div class="project-footer">
+                  <a href="#home" class="project-link">
+                    <span>View Current Page</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16" aria-hidden="true">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: Web-Based Information System -->
+            <article class="project-card">
+              <div class="project-thumb-box">
+                <img src="assets/images/project-infogate.png" alt="Web-Based Information System dashboard preview" class="project-thumb" loading="lazy" />
+                <span class="project-badge badge-concept">Concept Prototype (In Progress)</span>
+              </div>
+              <div class="project-info">
+                <div class="project-tags">
+                  <span class="tag">SQL</span>
+                  <span class="tag">Next.js</span>
+                  <span class="tag">Database</span>
+                </div>
+                <h3 class="project-title">Web-Based Information System</h3>
+                <p class="project-desc">
+                  A sample information system concept focusing on organizing, managing, and querying records with relational database structures and clean administration workflows.
+                </p>
+                <div class="project-footer">
+                  <button type="button" class="project-modal-btn" data-project="is-concept">
+                    <span>Explore Concept Specs</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" y1="16" x2="12" y2="12"></line>
+                      <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: UI/UX Website Prototype -->
+            <article class="project-card">
+              <div class="project-thumb-box">
+                <img src="assets/images/project-uiux.png" alt="UI/UX Prototype wireframes preview" class="project-thumb" loading="lazy" />
+                <span class="project-badge badge-concept">UI/UX Prototype Concept</span>
+              </div>
+              <div class="project-info">
+                <div class="project-tags">
+                  <span class="tag">UI/UX</span>
+                  <span class="tag">Figma Wireframe</span>
+                  <span class="tag">Usability</span>
+                </div>
+                <h3 class="project-title">UI/UX Website Prototype</h3>
+                <p class="project-desc">
+                  A website interface concept focused on high usability, clear visual hierarchy, component modularity, and responsive interaction for multi-device browsing.
+                </p>
+                <div class="project-footer">
+                  <button type="button" class="project-modal-btn" data-project="uiux-concept">
+                    <span>View Wireframe Details</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" y1="16" x2="12" y2="12"></line>
+                      <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- ==============================================
+             CONTACT ME SECTION
+             ============================================== -->
+        <section class="section-container" id="contact" aria-labelledby="contact-title">
+          <div class="contact-layout">
+            
+            <!-- Left Contact Info -->
+            <div class="contact-info-col">
+              <span class="section-tag">GET IN TOUCH</span>
+              <h2 class="section-title" id="contact-title">Let's Connect &amp; Collaborate</h2>
+              <p class="contact-intro">
+                Whether you have an internship opportunity, school project inquiry, or want to discuss web development and UI/UX design, feel free to drop me a message!
+              </p>
+
+              <!-- Direct Email Card -->
+              <div class="contact-channel-card">
+                <div class="channel-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">Direct Email Address</span>
+                  <a href="mailto:raffysfalls122@gmail.com" class="channel-value" id="contact-email-link">
+                    raffysfalls122@gmail.com
+                  </a>
+                </div>
+                <button type="button" class="copy-email-btn" id="copy-email-btn" title="Copy email address" aria-label="Copy email address to clipboard">
+                  <span id="copy-btn-text">Copy</span>
+                </button>
+              </div>
+
+              <!-- Location / Academic Status Card -->
+              <div class="contact-channel-card">
+                <div class="channel-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">Academic Program &amp; Status</span>
+                  <span class="channel-text">Bachelor of Science in Information Systems (BSIS)</span>
+                </div>
+              </div>
+
+              <!-- Social Links in Contact -->
+              <div class="contact-socials-group">
+                <span class="socials-label">Connect with me online:</span>
+                <div class="social-links-row">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="GitHub Profile">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                    </svg>
+                  </a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="LinkedIn Profile">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                      <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.67 1.67 0 1 0 0-3.34 1.67 1.67 0 0 0 0 3.34M7.85 18.5V10.1H5.07v8.4h2.78z"/>
+                    </svg>
+                  </a>
+                  <a href="mailto:raffysfalls122@gmail.com" class="social-circle" aria-label="Email Me">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                      <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Contact Form (Honest & Functional Submission Method) -->
+            <div class="contact-form-col">
+              <form class="contact-form" id="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Your Name <span class="required-star">*</span></label>
+                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Alex Johnson" required />
+                  <span class="field-error" id="name-error">Please enter your name.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Your Email <span class="required-star">*</span></label>
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. alex@example.com" required />
+                  <span class="field-error" id="email-error">Please enter a valid email address.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-subject" class="form-label">Subject <span class="required-star">*</span></label>
+                  <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="e.g. School Project / Internship Inquiry" required />
+                  <span class="field-error" id="subject-error">Please provide a subject.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message" class="form-label">Message <span class="required-star">*</span></label>
+                  <textarea id="contact-message" name="message" rows="5" class="form-textarea" placeholder="Write your message here..." required></textarea>
+                  <span class="field-error" id="message-error">Please enter your message.</span>
+                </div>
+
+                <!-- Honest Submission Notice -->
+                <div class="form-honest-notice">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  </svg>
+                  <span>Submitting launches your email client to send directly to <strong>raffysfalls122@gmail.com</strong> with your message formatted.</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary submit-btn" id="submit-btn">
+                  <span>Send Message</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+
+                <!-- Feedback banner -->
+                <div class="form-status-banner" id="form-status-banner" role="alert" aria-live="polite"></div>
+              </form>
+            </div>
+
+          </div>
+        </section>
+
+      </main>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <a href="#home" class="logo">
+              <span class="logo-accent">RAFFY</span>
+              <span class="logo-sub">.DEV</span>
+            </a>
+            <p class="footer-tagline">
+              BSIS Student &amp; Aspiring Web Developer &amp; UI/UX Designer.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About me</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact me</a>
+          </div>
+
+          <div class="footer-bottom">
+            <p class="footer-copy">
+              &copy; <span id="current-year">2026</span> Raffy Lucero. All rights reserved. Crafted with clean HTML &amp; CSS.
+            </p>
+            <a href="#home" class="back-to-top" aria-label="Back to top of page">
+              <span>Back to Top</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true">
+                <polyline points="18 15 12 9 6 15"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- Project Details Modal -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">&times;</button>
+      <div class="modal-content" id="modal-dynamic-content">
+        <!-- Content inserted dynamically by script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
