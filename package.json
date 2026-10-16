@@ -4,7 +4,9 @@
   "description": "Personal Portfolio Website for Raffy Lucero - BSIS Student & Aspiring Web Developer / UI-UX Designer",
   "scripts": {
     "dev": "npx serve . -l 3000",
-    "start": "npx serve . -l 3000"
+    "start": "npx serve . -l 3000",
+    "build": "node -e \"console.log('Build complete: static assets ready for deployment.')\"",
+    "preview": "npx serve . -l 3000"
   },
   "keywords": [
     "portfolio",
